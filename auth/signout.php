@@ -1,0 +1,1 @@
+<?php require_once(sprintf('%s/system/Auth/Signout.php', App::base_dir())); ?>
