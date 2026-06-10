@@ -105,7 +105,7 @@ php spark serve
 ```bash
 composer test
 php spark routes
-php spark migrate
+php spark migrate -all
 php spark db:seed MessageSeeder
 ```
 
