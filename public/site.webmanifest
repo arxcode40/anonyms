@@ -1,0 +1,14 @@
+{
+	"short_name": "Anonyms",
+	"name": "Anonymous Message",
+	"icons": [
+		{
+			"src": "icon.png",
+			"type": "image/png",
+			"sizes": "256x256"
+		}
+	],
+	"start_url": "/?utm_source=homescreen",
+	"background_color": "#ecfad7",
+	"theme_color": "#a2e436"
+}
