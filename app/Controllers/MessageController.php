@@ -59,6 +59,7 @@ class MessageController extends BaseController
         }
 
         return view('Message/new', [
+            'robots'   => 'index, follow',
             'title'    => "Kirim Pesan Rahasia ke @{$username}",
             'username' => $username,
         ]);
