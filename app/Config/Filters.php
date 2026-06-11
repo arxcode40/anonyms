@@ -2,7 +2,6 @@
 
 namespace Config;
 
-use App\Filters\AntiBotFilter;
 use App\Filters\MaintenanceFilter;
 use App\Filters\ThrottleFilter;
 use CodeIgniter\Config\Filters as BaseFilters;
@@ -38,7 +37,6 @@ class Filters extends BaseFilters
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
         'throttle'      => ThrottleFilter::class,
-        'antibot'       => AntiBotFilter::class,
         'maintenance'   => MaintenanceFilter::class,
     ];
 
