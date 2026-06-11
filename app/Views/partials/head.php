@@ -51,8 +51,8 @@ $jsonLd      = [
 ];
 ?>
 <meta charset="UTF-8">
-<meta content="initial-scale=1.0, width=device-width" name="viewport">
-<meta content="ie=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="initial-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title><?= esc($fullTitle) ?></title>
 <link href="<?= esc($canonicalUrl, 'attr') ?>" rel="canonical">
 <link href="https://cdn.jsdelivr.net" rel="preconnect">
@@ -60,26 +60,30 @@ $jsonLd      = [
 <link href="https://cdn.jsdelivr.net/npm/bootswatch/dist/brite/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
 <link href="<?= esc(app_asset_url('css/style.css'), 'attr') ?>" rel="stylesheet">
-<meta content="<?= esc($description, 'attr') ?>" name="description">
-<meta content="<?= esc($robots, 'attr') ?>" name="robots">
-<meta content="ArX Code" name="author">
-<meta content="<?= esc($siteName, 'attr') ?>" name="application-name">
-<meta content="<?= esc($siteName, 'attr') ?>" property="og:site_name">
-<meta content="<?= esc($fullTitle, 'attr') ?>" property="og:title">
-<meta content="<?= esc($description, 'attr') ?>" property="og:description">
-<meta content="website" property="og:type">
-<meta content="<?= esc($canonicalUrl, 'attr') ?>" property="og:url">
-<meta content="<?= esc($imageUrl, 'attr') ?>" property="og:image">
-<meta content="<?= esc($imageAlt, 'attr') ?>" property="og:image:alt">
-<meta content="id_ID" property="og:locale">
-<meta content="summary_large_image" name="twitter:card">
-<meta content="<?= esc($fullTitle, 'attr') ?>" name="twitter:title">
-<meta content="<?= esc($description, 'attr') ?>" name="twitter:description">
-<meta content="<?= esc($imageUrl, 'attr') ?>" name="twitter:image">
-<meta content="<?= esc($imageAlt, 'attr') ?>" name="twitter:image:alt">
+<meta name="description" content="<?= esc($description, 'attr') ?>">
+<meta name="robots" content="<?= esc($robots, 'attr') ?>">
+<meta name="author" content="ArX Code">
+<meta name="application-name" content="<?= esc($siteName, 'attr') ?>">
+<meta property="og:site_name" content="<?= esc($siteName, 'attr') ?>">
+<meta property="og:title" content="<?= esc($fullTitle, 'attr') ?>">
+<meta property="og:description" content="<?= esc($description, 'attr') ?>">
+<meta property="og:type" content="website">
+<meta property="og:url" content="<?= esc($canonicalUrl, 'attr') ?>">
+<meta property="og:image" content="<?= esc($imageUrl, 'attr') ?>">
+<meta property="og:image:secure_url" content="<?= esc($imageUrl, 'attr') ?>">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="<?= esc($imageAlt, 'attr') ?>">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<?= esc($fullTitle, 'attr') ?>">
+<meta name="twitter:description" content="<?= esc($description, 'attr') ?>">
+<meta name="twitter:image" content="<?= esc($imageUrl, 'attr') ?>">
+<meta name="twitter:image:alt" content="<?= esc($imageAlt, 'attr') ?>">
 <script <?= csp_script_nonce() ?> type="application/ld+json"><?= json_encode($jsonLd, $jsonOptions) ?></script>
 <link href="/favicon.ico" rel="icon" sizes="any">
 <link href="/icon.svg" rel="icon" type="image/svg+xml">
 <link href="/icon.png" rel="apple-touch-icon">
 <link href="/site.webmanifest" rel="manifest">
-<meta content="#a2e436" name="theme-color">
+<meta name="theme-color" content="#a2e436">
