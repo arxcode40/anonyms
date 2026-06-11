@@ -6,7 +6,7 @@ $description = $description
     ?? (env('APP_DESC') ?: 'Kirim dan terima pesan rahasia anonim dengan Anonyms. Buat tautan pribadi, bagikan ke teman, lalu dapatkan pesan anonim secara mudah, aman, dan rahasia.');
 $robots ??= 'noindex, nofollow';
 $canonicalUrl = current_url();
-$imageUrl ??= base_url('img/og.webp');
+$imageUrl ??= base_url('img/og.png');
 $imageAlt ??= "Gambar {$siteName}";
 $jsonOptions = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT;
 $jsonLd      = [
