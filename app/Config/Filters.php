@@ -57,8 +57,10 @@ class Filters extends BaseFilters
         'before' => [
             'maintenance',
             'forcehttps', // Force Global Secure Requests
+            'pagecache',  // Web Page Caching
         ],
         'after' => [
+            'pagecache',   // Web Page Caching
             'performance', // Performance Metrics
             // 'toolbar',     // Debug Toolbar
         ],
