@@ -134,7 +134,7 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string
      */
-    public $fontSrc = ['self', 'https://cdn.jsdelivr.net'];
+    public $fontSrc = ['self', 'https://cdn.jsdelivr.net', 'data:'];
 
     /**
      * Lists valid endpoints for submission from `<form>` tags.
