@@ -17,6 +17,7 @@
 .screenshot-area {
 	left: -9999px;
 	top: 0;
+	min-width: 540px;
 }
 
 #hpc {
